@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    consumer:
+      group-id: tpd-loggers
+      auto-offset-reset: earliest
+    bootstrap-servers: [ test112:9092, test-123:9092 ]
+
+tpd:
+  topic-name: advice-topic
+  # 每次请求发送消息的个数
+  messages-per-request: 10
